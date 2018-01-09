@@ -25,60 +25,49 @@
                 <h1>Settings</h1>
                 <div class="ui list settings_list">
                     <div class="item">
-                        <label for="width">Grid width</label>
-                        <div class="ui input float_input" id="width_input">
-                            <input type="number" id="width" value=10>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <label for="height">Grid height</label>
-                        <div class="ui input float_input" id="height_input">
-                            <input type="number" id="height" value=10>
-                        </div>
-                    </div>
-                    <div class="item">
                         <div class="ui checkbox">
                             <input type="checkbox" id="api_prefix_check">
                             <label for="api_prefix_check">API Prefix</label>
                         </div>
-                        <div class="ui input float_input" id="api_prefix_input">
-                            <input type="text" value="turtle">
+                        <div class="ui input float_input">
+                            <input type="text" value="turtle" id="api_prefix_input">
                         </div>
                     </div>
                     <!-- Movement -->
                     <div class="item">
-                        <label for="">Up</label>
+                        <label for="up_api">Up</label>
                         <div class="ui input float_input">
-                            <input type="text" value="moveForward">
+                            <input type="text" placeholder="moveForward" value="moveForward" id="up_api">
                         </div>
                     </div>
                     <div class="item">
-                        <label for="">Down</label>
+                        <label for="down_api">Down</label>
                         <div class="ui input float_input">
-                            <input type="text" value="moveBackward">
+                            <input type="text" placeholder="moveBackward" id="down_api">
                         </div>
                     </div>
                     <!-- Rotation -->
                     <div class="item">
-                        <label for="">Turn Left</label>
+                        <label for="turn_left_api">Turn Left</label>
                         <div class="ui input float_input">
-                            <input type="text" value="turnLeft">
+                            <input type="text" placeholder="turnLeft" value="turnLeft" id="turn_left_api">
                         </div>
                     </div>
                     <div class="item">
-                        <label for="">Turn Right</label>
+                        <label for="turn_right_api">Turn Right</label>
                         <div class="ui input float_input">
-                            <input type="text" value="turnRight">
+                            <input type="text" placeholder="turnRight" value="turnRight" id="turn_right_api">
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
         <div class="column">
             <div id="turtle_wrapper">
                 <h1>Turtle</h1>
-                <canvas id="turtle"></canvas>
+                <!-- <canvas id="turtlecanvas"></canvas> -->
+                <canvas id="turtlecanvas" width="300" height="300"></canvas>
+                <canvas id="imagecanvas" width="300" height="300" style="display:none"></canvas>
             </div>
         </div>
         <div class="column">
@@ -89,6 +78,8 @@
         </div>
 
     </div>
+
+    <script src="turtle.js"></script>
 
     <script src="index.js"></script>
 
