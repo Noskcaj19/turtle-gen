@@ -1,0 +1,35 @@
+/* body {
+    padding: 1vw;
+} */
+
+textarea {
+  resize: none;
+}
+
+/* #settings_container {
+    margin-left: 2em;
+    margin-top: 2em;
+} */
+
+#turtle_wrapper, #code_wrapper, #settings_wrapper {
+    text-align: center;
+}
+
+#turtle {
+    width: 30vw;
+    height: 30vw;
+    display: inline-block;
+}
+
+canvas {
+    border: 1px solid black;
+}
+
+#height_input, #width_input {
+    float: right;
+}
+
+#code {
+    width: 90%;
+    height: 50vh;
+}
