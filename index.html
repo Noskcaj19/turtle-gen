@@ -23,19 +23,55 @@
         <div class="column">
             <div id="settings_wrapper">
                 <h1>Settings</h1>
-                <div class="ui list">
+                <div class="ui list settings_list">
                     <div class="item">
                         <label for="width">Grid width</label>
-                        <div class="ui input" id="width_input">
+                        <div class="ui input float_input" id="width_input">
                             <input type="number" id="width" value=10>
                         </div>
                     </div>
                     <div class="item">
                         <label for="height">Grid height</label>
-                        <div class="ui input" id="height_input">
+                        <div class="ui input float_input" id="height_input">
                             <input type="number" id="height" value=10>
                         </div>
                     </div>
+                    <div class="item">
+                        <div class="ui checkbox">
+                            <input type="checkbox" id="api_prefix_check">
+                            <label for="api_prefix_check">API Prefix</label>
+                        </div>
+                        <div class="ui input float_input" id="api_prefix_input">
+                            <input type="text" value="turtle">
+                        </div>
+                    </div>
+                    <!-- Movement -->
+                    <div class="item">
+                        <label for="">Up</label>
+                        <div class="ui input float_input">
+                            <input type="text" value="moveForward">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <label for="">Down</label>
+                        <div class="ui input float_input">
+                            <input type="text" value="moveBackward">
+                        </div>
+                    </div>
+                    <!-- Rotation -->
+                    <div class="item">
+                        <label for="">Turn Left</label>
+                        <div class="ui input float_input">
+                            <input type="text" value="turnLeft">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <label for="">Turn Right</label>
+                        <div class="ui input float_input">
+                            <input type="text" value="turnRight">
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>

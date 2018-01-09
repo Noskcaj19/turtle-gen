@@ -6,13 +6,13 @@ textarea {
   resize: none;
 }
 
-/* #settings_container {
-    margin-left: 2em;
-    margin-top: 2em;
-} */
-
 #turtle_wrapper, #code_wrapper, #settings_wrapper {
     text-align: center;
+}
+
+.settings_list {
+    text-align: left;
+    margin-left: 3em !important;
 }
 
 #turtle {
@@ -25,7 +25,7 @@ canvas {
     border: 1px solid black;
 }
 
-#height_input, #width_input {
+.float_input {
     float: right;
 }
 
