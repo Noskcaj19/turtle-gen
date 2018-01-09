@@ -4,26 +4,28 @@
 <head>
     <title>Turtle Generator</title>
 
-    <!-- Standard Meta -->
+    <!-- Meta -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-    <!-- Semantic UI -->
+    <!-- Vendor -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.11.8/semantic.min.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.11.8/semantic.min.js"></script>
 
-    <!-- Custom code -->
+    <!-- Custom style -->
     <link rel="stylesheet" href="index.css" />
 </head>
 
 <body>
     <div class="ui three column grid">
+        <!-- Settings -->
         <div class="column">
             <div id="settings_wrapper">
                 <h1>Settings</h1>
                 <div class="ui list settings_list">
+                    <!-- Api prefix -->
                     <div class="item">
                         <div class="ui checkbox">
                             <input type="checkbox" id="api_prefix_check">
@@ -62,28 +64,25 @@
                 </div>
             </div>
         </div>
+        <!-- Turtle view -->
         <div class="column">
             <div id="turtle_wrapper">
                 <h1>Turtle</h1>
-                <!-- <canvas id="turtlecanvas"></canvas> -->
                 <canvas id="turtlecanvas" width="300" height="300"></canvas>
                 <canvas id="imagecanvas" width="300" height="300" style="display:none"></canvas>
             </div>
         </div>
+        <!-- Code display -->
         <div class="column">
             <div id="code_wrapper">
                 <h1>Code</h1>
                 <textarea id="code"></textarea>
             </div>
         </div>
-
     </div>
-
+    <!-- Custom scripts -->
     <script src="turtle.js"></script>
-
     <script src="index.js"></script>
-
-
 </body>
 
 </html>
