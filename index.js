@@ -17,6 +17,7 @@ $(document).keydown(function (e) {
         case 'ArrowDown':
             moves.push('reverse')
             left(180)
+            forward(15)
             break
     }
     codeGen()
@@ -56,12 +57,12 @@ function forwardApi() {
 function reverseApi() {
     if ($("#down_api").val() == "") {
         if ($('#turn_right_api').val() == "") {
-            return Array(2).fill(leftApi())
+            return Array(2).fill(leftApi()).concat(forwardApi())
         } else {
-            return Array(2).fill(rightApi())
+            return Array(2).fill(rightApi()).concat(forwardApi())
         }
     } else {
-        return [maybePrefix($("#down_api").val() + "()")]
+        return [maybePrefix($("#down_api").val() + "()")].concat(forwardApi())
     }
 }
 
