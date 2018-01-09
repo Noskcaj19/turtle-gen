@@ -19,11 +19,17 @@ $(document).keydown(function (e) {
             left(180)
             forward(15)
             break
+        default:
+            return
     }
     codeGen()
 })
 
 $("input").on('input', codeGen)
+$("#copy_button").click(function () {
+    $("#code").select();
+    document.execCommand("copy")
+})
 
 function maybePrefix(func) {
     if ($("#api_prefix_check").is(":checked")) {
